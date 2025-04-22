@@ -1,6 +1,8 @@
 # OSV MCP Server
 
-This project provides an MCP (Model Context Protocol) server for integrating OSV (Open Source Vulnerabilities) data and tools with AI assistants or large language models (LLMs). The server is implemented in Python and exposes tools and resources that can be used by LLMs to enhance their workflow and capabilities.
+This project provides an MCP (Model Context Protocol) server for integrating OSV (Open Source Vulnerabilities) data and tools with AI assistants or large language models (LLMs). The server is implemented in Python and exposes tools and resources that can be used by LLMs to enhance their workflow and capabilities. Here is a screenshot of Claude Desktop using the OSV MCP Server.
+
+![Claude Desktop Using OSV MCP Server](osv-mcp-claude.jpg "Claude Desktop Using OSV MCP Server")
 
 ## Features
 
