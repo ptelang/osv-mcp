@@ -55,6 +55,31 @@ MCP servers expose tools and resources over a local or network-accessible API. A
 
 Consult your AI assistant or LLM's documentation for specific instructions on adding or configuring MCP servers.
 
+### Using OSV MCP Server with Claude Desktop
+
+Add the OSV MCP server in `claude_desktop_config.json` file.
+
+On Mac or Linux, edit: `~/Library/Application\ Support/Claude/claude_desktop_config.json`.
+On Windows, edit: `env:AppData\Claude\claude_desktop_config.json`.
+
+Add the OSV MCP server to the config as below.
+
+```json
+{
+    "mcpServers": {
+        "vulns": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/ABSOLUTE/PATH/TO/PARENT/FOLDER/osv-mcp",
+                "run",
+                "vulns.py"
+            ]
+        }
+    }
+}
+```
+
 ## Development
 
 - Source code is in `vulns.py`.
